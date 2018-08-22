@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <title>title</title>
+   <style>
+   * {
+     cursor: none;
+   }
+   .awaiting-screen {
+     display: none;
+   }
+   .title-card {
+     width: 100%;
+     position: absolute;
+   }
+
+   .video {
+     display: none;
+     width: 100%;
+     position: absolute;
+   }
+
+   .bigblackbox {
+     width: 100%;
+     height: 100%;
+     display: none;
+     background-color: black;
+     position: absolute;
+     z-index: 100;
+     left: 0;
+     top: 0;
+   }
+   </style>
+ </head>
+ <body>
+<img class="welcome-screen title-card" src="welcomescreen.jpg">
+<img class="awaiting-screen title-card" src="awaiting.jpg">
+<video src="test.mp4" preload="auto" class="instructions video"></video>
+<video src="test.mp4" preload="auto" class="game video"></video>
+<div class="bigblackbox"></div>
+<script src="../socket.io.js"></script>
+<script src="../jquery-3.3.1.min.js"></script>
+<script src="../chiroclient.js"></script>
+ </body>
+</html>

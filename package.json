@@ -1,0 +1,16 @@
+{
+  "name": "chiromania-server",
+  "version": "1.0.0",
+  "description": "The npm server code for the Chiromania project",
+  "main": "chiroserver.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Travis DuBose",
+  "license": "ISC"
+}

@@ -4,6 +4,10 @@
    <meta charset="UTF-8">
    <title>title</title>
    <style>
+
+   body {
+     background-color: #0f528e;
+   }
    * {
      cursor: none;
    }
@@ -13,12 +17,14 @@
    .title-card {
      width: 100%;
      position: absolute;
+     left: 0;
    }
 
    .video {
      display: none;
      width: 100%;
      position: absolute;
+     left:0;
    }
 
    .bigblackbox {
@@ -36,8 +42,8 @@
  <body>
 <img class="welcome-screen title-card" src="welcomescreen.jpg">
 <img class="awaiting-screen title-card" src="awaiting.jpg">
-<video src="test.mp4" preload="auto" class="instructions video"></video>
-<video src="test.mp4" preload="auto" class="game video"></video>
+<video src="instructions.mp4" preload="auto" class="instructions video"></video>
+<video src="game.mp4" preload="auto" class="game video"></video>
 <div class="bigblackbox"></div>
 <script src="../socket.io.js"></script>
 <script src="../jquery-3.3.1.min.js"></script>

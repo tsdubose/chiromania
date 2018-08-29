@@ -3,8 +3,6 @@ var express = require('express');
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-// TODO: Use socket.io's hashes to refer to clients in the state object.
-// TODO: Need to check and see if the video has loaded for both videos.
 // TODO: Need to look for places to resync.
 var state = {};
 state.twoConnected = false;
@@ -19,7 +17,6 @@ var currentAudio = null;
 var currentVideo = null;
 
 
-//// TODO: Rather than using players[0] and 2, just push things into an array and refer to players[0] etc.
 io.on('connection', function(socket){
 	console.log(socket.id + ' connected');
 
@@ -46,9 +43,6 @@ io.on('connection', function(socket){
 				}
 
 			}
-			// if (players.length == 2) {
-			// 	state.twoConnected = true;
-			// }
 		}
 		else if (state.gamePlaying) {
 			theSwitch();

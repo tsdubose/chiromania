@@ -16,6 +16,10 @@ window.addEventListener("keydown", function (e) {
 	}
 });
 
+// window.addEventListener("contextmenu", function (e) {
+// 	e.preventDefault();
+// });
+
 socket.on("changescreen", function () {
 	$(".welcome-screen").hide();
 	$(".awaiting-screen").show();

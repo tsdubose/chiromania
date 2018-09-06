@@ -11,8 +11,6 @@ window.addEventListener("keydown", function (e) {
 	if (e.key == " ") {
 		e.preventDefault();
 		socket.emit("space", socket.id);
-		console.log("message sent");
-		console.log(socket.id);
 	}
 });
 

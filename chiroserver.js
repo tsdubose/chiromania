@@ -22,7 +22,7 @@ io.on('connection', function(socket){
 
 	socket.on("space", function (playerID) {
 		if (!state.twoReady) {
-			if (!players.includes(playerID)) {
+			if (!players.includes(playerID) && playerID != null) {
 				players.push(playerID);
 				state[playerID] = {
 					ready: true,
